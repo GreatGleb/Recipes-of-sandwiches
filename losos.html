@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="../img/logo/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/language.css">
+	<link rel="stylesheet" href="../css/modal.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,&#10;&#9;900|Playfair+Display:400,400i&amp;subset=cyrillic" rel="stylesheet">
+	<script src="../js/main.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	
+	
+</head>
+
+<body onclick="body_field_2(event)">
+
+	<!-- space -->
+	<div class="space-1">		
+	</div>
+	<!-- // space -->
+	<!-- nav-wrapper -->
+	<div class="nav_wrapper">
+	
+		<div class="logo">
+		
+			<a href="index.html">
+				<img src="../img/logo/sandwich.svg" alt="Long Beach Surfing Institute">
+			</a>
+			
+		</div>
+		
+		<div id="lang_selector" class="language-dropdown">
+			  <label for="toggle" class="lang-flag lang-es" title="Click to select the language">
+				<span class="flag"></span>
+			  </label>
+			  <ul class="lang-list">
+				<li class="lang lang-en" title="EN">
+				  <a href="../EN/losos.html"><span class="flag"></span></a>
+				</li>
+				<li class="lang lang-pt" title="UA">
+				  <a href="../UA/losos.html"><span class="flag"></span></a>
+				</li>
+				<li class="lang lang-es selected" title="RU">
+				  <a href="../RU/losos.html"><span class="flag"></span></a>
+				</li>
+			  </ul>
+		</div>
+	
+			<button class="btn-menu" id="open-menu" data-target="#collapse-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+	
+		<ul class="nav" id="collapse-menu">
+		
+			<li><a href="index.html" class="nav_item">Home</a><hr></li>
+			<li><a href="#openModalAbout" class="nav_item">About</a><hr></li>
+			<li><a href="gallery.html" class="nav_item">Gallery</a><hr></li>
+			<li><a href="recipes.html" class="nav_item last-child nav_item-active"><span class="letter">Recipes</span></a><hr></li>
+		
+		</ul>
+		
+	</div>
+	<!-- // nav-wrapper -->
+	
+	<!-- header-wrapper -->
+	<div class="header-wrapper">
+	
+		<!-- header-title -->
+		<h1 class="header-title">Бутерброд с сыром, помидорами и копченым лососем</h1>
+		<div class="header-description" id="esez">
+			<img src="../img/recipes/losos.jpg">
+			<br><p style="text-align:center">Самый простой и быстрый вариант для тех, у кого свободного времени совсем мало.<p>
+			<p>Берем два кусочка цельнозернового хлеба. Смазываем их оливковым маслом, сверху натираем достаточное количество сыра. </p>
+			<p>Поверх выкладываем тонко нарезанные ломтики помидора и копченого лосося. Опять натираем сыр. Финальный ингредиент — мелко нарезанный лук. Помещаем сэндвич в микроволновку, пока хлеб не подрумянится, а сыр не расплавится. Вкусный и полезный перекус готов.</p>
+			<br><br>
+		</div>		
+		<!-- // header-title -->
+		<div id="color_for_form">
+		<h2>Калькулятор стоимости</h2>
+		<form id="pRices">
+		   <div class="group"> 
+		   
+				  <input type="text" id="n1" required="" class="butter" min="0" onkeyup="isNumeric(this)">
+				  <span class="bar" id="na1"></span>
+				  <label id="nb1">Цена хлеба (<span id="m_bread">0</span> кг)</label>
+						<div id="arrow_box_2" onclick="arrow_up()">
+						  <div class="arrow_2 arrow-first_2"></div>
+						  <div class="arrow_2 arrow-second_2"></div>
+						</div>
+						<div id="arrow_box" onclick="arrow_down()">
+						  <div class="arrow arrow-first"></div>
+						  <div class="arrow arrow-second"></div>
+						</div>
+				  
+				  <div class="setting">
+					  <div id="o1" class="o_set">
+						  <input onclick="value_bread1()" type="text" id="oa1" required="" class="oa" onkeyup="isNumeric(this)">
+						  <span class="bar ob" id="ob1"></span>
+						  <label id="oc1">Масса хлеба (кг)</label>
+						<div id="arrow_box_2-2" onclick="arrow_up_2()">
+						  <div class="arrow_2 arrow-first_2"></div>
+						  <div class="arrow_2 arrow-second_2"></div>
+						</div>
+						<div id="arrow_box-2" onclick="arrow_down_2()">
+						  <div class="arrow arrow-first"></div>
+						  <div class="arrow arrow-second"></div>
+						</div>
+					  </div>
+					  
+					  <div id="p1" class="p_set">
+						  <input onclick="value_bread2()" type="text" id="pa1" required="" class="pa" onkeyup="isNumeric(this)">
+						  <span class="bar pb" id="pb1"></span>
+						  <label class="pc" id="pc1">Масса для одного бутерброда (г)</label>
+						<div id="arrow_box_2-3" onclick="arrow_up_3()">
+						  <div class="arrow_2 arrow-first_2"></div>
+						  <div class="arrow_2 arrow-second_2"></div>
+						</div>
+						<div id="arrow_box-3" onclick="arrow_down_3()">
+						  <div class="arrow arrow-first"></div>
+						  <div class="arrow arrow-second"></div>
+						</div>
+					  </div>
+				  </div>
+				  
+				  <span id="sppace_bread" class="sppace"></span>
+				  <a onclick="setting_bread()" id="button_setting_bread">
+				  <img src="../img/icons/setting.png" alt="Настроить" title="Настройки">
+				  </a>
+				  <a onclick="back_bread()" id="button_back_bread">
+				  <img id="arrow_left_bread" class="arrow_left" src="../img/icons/arrow_left.png" alt="Назад" title="Назад">
+				  </a>
+				  
+		   </div>
+		   <div class="group">      
+				  <input type="text" id="n2" required="" class="butter">
+				  <span class="bar" id="na2"></span>
+				  <label id="nb2">Цена масла (<span id="oil">1</span> л)</label>
+				  
+				  <div class="setting">
+					  <div id="o2" class="o_set">
+						  <input onclick="value_oil1()" type="text" id="oa2" required="" class="oa">
+						  <span class="bar ob" id="ob2"></span>
+						  <label id="oc2">Масса масла (л)</label>
+					  </div>
+					  
+					  <div id="p2" class="p_set">
+						  <input onclick="value_oil2()" type="text" id="pa2" required="" class="pa">
+						  <span class="bar pb" id="pb2"></span>
+						  <label class="pc" id="pc2">Масса для одного бутерброда (мл)</label>
+					  </div>
+				  </div>
+				  
+				  <span id="sppace_oil" class="sppace"></span>
+				  <a onclick="setting_oil()" id="button_setting_oil">
+				  <img src="../img/icons/setting.png" alt="Настроить" title="Настройки">
+				  </a>
+				  <a onclick="back_oil()" id="button_back_oil">
+				  <img id="arrow_left_oil" class="arrow_left" src="../img/icons/arrow_left.png" alt="Назад" title="Назад">
+				  </a>
+		   </div>
+		   <div class="group">      
+				  <input type="text" id="n3" required="" class="butter">
+				  <span class="bar" id="na3"></span>
+				  <label id="nb3">Цена сыра (<span id="cheese">1</span> кг)</label>
+				  
+				  <div class="setting">
+					  <div id="o3" class="o_set">
+						  <input onclick="value_cheese1()" type="text" id="oa3" required="" class="oa">
+						  <span class="bar ob" id="ob3"></span>
+						  <label id="oc3">Масса сыра (кг)</label>
+					  </div>
+					  
+					  <div id="p3" class="p_set">
+						  <input onclick="value_cheese2()" type="text" id="pa3" required="" class="pa">
+						  <span class="bar pb" id="pb3"></span>
+						  <label class="pc" id="pc3">Масса для одного бутерброда (г)</label>
+					  </div>
+				  </div>
+				  
+				  <span id="sppace_cheese" class="sppace"></span>
+				  <a onclick="setting_cheese()" id="button_setting_cheese">
+				  <img src="../img/icons/setting.png" alt="Настроить" title="Настройки">
+				  </a>
+				  <a onclick="back_cheese()" id="button_back_cheese">
+				  <img id="arrow_left_cheese" class="arrow_left" src="../img/icons/arrow_left.png" alt="Назад" title="Назад">
+				  </a>
+		   </div>
+		   <div class="group">      
+				  <input type="text" id="n4" required="" class="butter">
+				  <span class="bar" id="na4"></span>
+				  <label id="nb4">Цена на помидоры (<span id="tomatoes">1</span> кг)</label>
+				  
+				  <div class="setting">
+					  <div id="o4" class="o_set">
+						  <input onclick="value_tomatoes1()" type="text" id="oa4" required="" class="oa">
+						  <span class="bar ob" id="ob4"></span>
+						  <label id="oc4">Масса помидор (кг)</label>
+					  </div>
+					  
+					  <div id="p4" class="p_set">
+						  <input onclick="value_tomatoes2()" type="text" id="pa4" required="" class="pa">
+						  <span class="bar pb" id="pb4"></span>
+						  <label class="pc" id="pc4">Масса для одного бутерброда (г)</label>
+					  </div>
+				  </div>
+				  
+				  <span id="sppace_tomatoes" class="sppace"></span>
+				  <a onclick="setting_tomatoes()" id="button_setting_tomatoes">
+				  <img src="../img/icons/setting.png" alt="Настроить" title="Настройки">
+				  </a>
+				  <a onclick="back_tomatoes()" id="button_back_tomatoes">
+				  <img id="arrow_left_tomatoes" class="arrow_left" src="../img/icons/arrow_left.png" alt="Назад" title="Назад">
+				  </a>
+		   </div>
+		   <div class="group">      
+				  <input type="text" id="n5" required="" class="butter">
+				  <span class="bar" id="na5"></span>
+				  <label id="nb5">Цена копчёного лосося (<span id="losos">0.1</span> кг)</label>
+				  
+				  <div class="setting">
+					  <div id="o5" class="o_set">
+						  <input onclick="value_losos1()" type="text" id="oa5" required="" class="oa">
+						  <span class="bar ob" id="ob5"></span>
+						  <label id="oc5">Масса лосося (кг)</label>
+					  </div>
+					  
+					  <div id="p5" class="p_set">
+						  <input onclick="value_losos2()" type="text" id="pa5" required="" class="pa">
+						  <span class="bar pb" id="pb5"></span>
+						  <label class="pc" id="pc5">Масса для одного бутерброда (г)</label>
+					  </div>
+				  </div>
+				  
+				  <span id="sppace_losos" class="sppace"></span>
+				  <a onclick="setting_losos()" id="button_setting_losos">
+				  <img src="../img/icons/setting.png" alt="Настроить" title="Настройки">
+				  </a>
+				  <a onclick="back_losos()" id="button_back_losos">
+				  <img id="arrow_left_losos" class="arrow_left" src="../img/icons/arrow_left.png" alt="Назад" title="Назад">
+				  </a>
+		   </div>
+		   <div class="group">      
+				  <input type="text" id="n6" required="" class="butter">
+				  <span class="bar" id="na6"></span>
+				  <label id="nb6">Цена лука (<span id="onion">1</span> кг)</label>
+				  
+				  <div class="setting">
+					  <div id="o6" class="o_set">
+						  <input onclick="value_onion1()" type="text" id="oa6" required="" class="oa">
+						  <span class="bar ob" id="ob6"></span>
+						  <label id="oc6">Масса лука (кг)</label>
+					  </div>
+					  
+					  <div id="p6" class="p_set">
+						  <input onclick="value_onion2()" type="text" id="pa6" required="" class="pa">
+						  <span class="bar pb" id="pb6"></span>
+						  <label class="pc" id="pc6">Масса для одного бутерброда (г)</label>
+					  </div>
+				  </div>
+				  
+				  <span id="sppace_onion" class="sppace"></span>
+				  <a onclick="setting_onion()" id="button_setting_onion">
+				  <img src="../img/icons/setting.png" alt="Настроить" title="Настройки">
+				  </a>
+				  <a onclick="back_onion()" id="button_back_onion">
+				  <img id="arrow_left_onion" class="arrow_left" src="../img/icons/arrow_left.png" alt="Назад" title="Назад">
+				  </a>
+		   </div>
+		</form>
+		<button onclick="sum()" id="button_result"><span>Посчитать стоимость одного бутерброда</span></button>
+		<div class="additionalClass"><p></p></div>
+		
+		</div>
+	</div>
+	<!-- // header-wrapper -->	
+
+			<!-- The Modal -->			
+				<div id="openModal" class="modalbg">
+				  <div class="dialog">
+					<a href="#close" title="Close" class="close">᙭</a>
+					<h2>ВСЕ ПРАВА ЗАЩИЩЕНЫ</h2>
+					<h3>На самом деле нет.</h3>
+				  <p>Большая часть текста, изображений была взята из посторонних источников.</p>
+				  <p>Авторские права на все материалы, размещенные на этом сайте незащищены в соответствии с действующим законодательством Украины «Об авторском праве и смежных правах».</p>
+				  <p>При копировании материала с этого сайта, вы вряд ли повлечёте ответственность, предусмотренную законодательством Украины о защите авторских прав.</p> 
+				  <p>Но нам всё равно будет приятно, если пользуясь материалами из нашего сайта, вы укажете ссылку на этот сайт.</p>
+				</div>
+				</div>
+			<!--// The Modal -->
+			
+			<!-- The Modal -->			
+				<div id="openModalAbout" class="modalbg">
+				  <div class="dialog">
+					<a href="#close" title="Close" class="close">᙭</a>
+					<h2>О сайте</h2>
+				  <p>Этот сайт разработан в учебных целях.</p>
+				  <p>Все материалы были повзаимствованы с ресурса - kitchenmag.ru/</p>
+				  <p>Но дизайн был выбран разработчиками этого сайта.</p> 
+				  <p>Поэтому наш сайт не просто копирует чужие рецепты, а демонстрирует, пусть и не свои, рецепты в новом свете.</p>
+				</div>
+				</div>
+			<!--// The Modal -->
+	
+		<div class="container-f footer">
+				<div class="row">
+					<div class="container">
+						<div class="row">
+							<div class="colsm_1"><a href="#openModal">©</a> Sugak Gleb | 2018 -2019</div>							
+							<div class="colsm_2"><div id="lang_selected"><p>RU</p></div></div>
+							<div class="colsm_3">
+								<ul class="pmn footer-menu">
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="#openModalAbout">О сайте</a></li>
+									<li><a href="gallery.html">Галерея</a></li>
+									<li><a href="recipes.html">Рецепты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+		<script src="../js/losos.js"></script>
+						
+	<script type="text/javascript">
+	$(document).ready(function(){
+		  $(".lang-flag").click(function(){
+			$(".language-dropdown").toggleClass("open");
+		  });
+		  $("ul.lang-list li").click(function(){
+			$("ul.lang-list li").removeClass("selected");
+			$(this).addClass("selected");
+			if($(this).hasClass('lang-en')){
+			  $(".language-dropdown").find(".lang-flag").addClass("lang-en").removeClass("lang-es").removeClass("lang-pt");
+			  $("#lang_selected").html("<p>EN</p>")
+			}else if($(this).hasClass('lang-pt')){
+			  $(".language-dropdown").find(".lang-flag").addClass("lang-pt").removeClass("lang-es").removeClass("lang-en");
+			$("#lang_selected").html("<p>UA</p>")
+			}else{
+			  $(".language-dropdown").find(".lang-flag").addClass("lang-es").removeClass("lang-en").removeClass("lang-pt");
+			  $("#lang_selected").html("<p>RU</p>")
+			}
+			$(".language-dropdown").removeClass("open");
+		  });
+		})
+		
+		
+	/*menu adaptive*/
+	
+	$(document).ready(function() {
+		$("#open-menu").on("click", function() {
+			var target = $(this).attr("data-target");
+			if ($(target).hasClass("open")) {
+				$(target).removeClass("open");
+			} else {
+				$(target).addClass("open");
+			}
+		});
+
+		$(window).on("load resize", windowSize);
+
+		function windowSize() {
+			if ($(window).width() > "991") {
+				var menu = $("#open_menu").attr("data-target");
+				$(menu).removeClass("open");
+			}
+		}
+	});
+</script>		
+	
+
+
+</body></html>
