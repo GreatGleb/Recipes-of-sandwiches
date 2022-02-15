@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="ua">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Бутерброды</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="../img/logo/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/language_ru_ua.css">
+	<link rel="stylesheet" href="../css/modal.css">
+	<link rel="stylesheet" href="../css/blockWall.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,&#10;&#9;900|Playfair+Display:400,400i&amp;subset=cyrillic" rel="stylesheet">
+	<script src="../js/jquery.min.js"></script>	
+	
+</head>
+
+<body onclick="body_field_2(event)">
+
+	<!-- space -->
+	<div class="space-1">		
+	</div>
+	<!-- // space -->
+	<!-- nav-wrapper -->
+	<div class="nav_wrapper" data-menu="1">
+	
+		<div class="logo">
+		
+			<a href="index.html">
+				<img src="../img/logo/sandwich.svg" alt="Long Beach Surfing Institute">
+			</a>
+			
+		</div>
+		
+		<div id="lang_selector" class="language-dropdown" data-menu="1">
+			  <label for="toggle" class="lang-flag lang-pt" title="Click to select the language" data-menu="1">
+				<span class="flag" data-menu="1"></span>
+			  </label>
+			  <ul class="lang-list" data-menu="1">
+				<a href="../EN/losos.html">
+				<li class="lang lang-en" title="EN" data-menu="1">
+				  <span class="flag"></span>
+				</li>
+				</a>
+			    <a href="../UA/losos.html"> 
+				<li class="lang lang-pt selected" title="UA" data-menu="1">
+				  <span class="flag"></span>
+				</li>
+				</a>
+				<a href="../RU/losos.html">
+				<li class="lang lang-es" title="RU" data-menu="1">
+				  <span class="flag"></span>
+				</li>
+				</a>
+			  </ul>
+		</div>
+	
+			<input type="checkbox" id="hmt" class="hidden-menu-ticker" data-menu="1">
+			<label class="btnn-menu" for="hmt" id="open-menu" data-target="#collapse-menu" data-menu="1">
+			  <span class="first" data-menu="1"></span>
+			  <span class="second" data-menu="1"></span>
+			  <span class="third" data-menu="1"></span>
+			</label>
+	
+		<ul class="nav" id="collapse-menu" data-menu="1">
+		
+			<li data-menu="1"><a href="index.html" class="nav_item">Головна</a><hr></li>
+			<li data-menu="1"><a href="#openModalAbout" class="nav_item">Про нас</a><hr></li>
+			<li data-menu="1"><a href="news.html" class="nav_item">Новини</a><hr></li>
+			<li data-menu="1"><a href="recipes.html" class="nav_item last-child nav_item-active"><span class="letter">Рецепти</span></a><hr></li>
+		
+		</ul>		
+		
+	</div>
+	<!-- // nav-wrapper -->
+	
+	<!-- header-wrapper -->
+	<div class="header-wrapper">
+	
+		<!-- header-title -->
+		<h1 class="header-title">Бутерброд з сиром, помідорами і копченим лососем</h1>
+		<div class="header-description">
+			<img src="../img/recipes/losos.jpg">
+			<br><p style="text-align:center">Найпростіший і швидкий варіант для тих, у кого вільного часу зовсім мало.<p>
+			<p>Беремо два шматочки цільнозернового хліба. Змащуємо їх оливковою олією, зверху натираємо достатню кількість сиру.</p>
+			<p>Поверх викладаємо тонко нарізані скибочки помідора і копченого лосося. Знову натираємо сир. Фінальний інгредієнт - дрібно нарізану цибулю. Розміщуємо сендвіч в мікрохвильовку, поки хліб не підрум'яниться, а сир не розплавиться. Смачний і корисний перекус готовий.</p>
+
+		<section class="recipe-ingredients ng-scope" ng-controller="ar_controllers_recipe_ingredient" ng-init="init(4,213656,'Recipe',0, 'Amazing Crusted Chicken', 1)">
+    
+<h2 class="heading__h2--gutters recipe-ingredients__header">Складові</h2>
+
+<span class="recipe-ingredients__header__toggles">
+    <span class="ready-in-time__container">
+        <span class="ready-in-time" aria-label="Ready in 1 Hour ">15 m</span>
+        <span class="svg-icon--recipe-page--time_stats_gr svg-icon--recipe-page--time_stats_gr-dims"></span>
+    </span>
+
+    <meta id="metaRecipeServings" itemprop="recipeYield" content="4">
+
+    <a href="" id="servings-button" class="servings-adust-trigger" popup-trigger="servingsSection">
+        <span class="servings-count" ng-class="{'active': servingsSection_showing}"><span ng-bind="adjustedServings" class="ng-binding">4</span><span class="servings-count__desc" ng-class="{'active': servingsSection_showing}"> порції</span></span>
+
+        <span class="svg-icon--recipe-page--servings_gr svg-icon--recipe-page--servings_gr-dims" ng-class="{'active': servingsSection_showing}"></span>
+    </a>
+
+        <a href="" id="nutrition-button" class="nutrition-trigger" data-scroll-to-anchor="nutrition-info" onclick="AnchorScroll('nutrition-info');segmentRecipeAnalyticsTrack('Calories Clicked')">
+            <span class="calorie-count" aria-label="806 calories"><span>136</span> <span class="calorie-count__desc" aria-hidden="true"> кКал</span></span>
+            <span class="svg-icon--recipe-page--nutrition_gr svg-icon--recipe-page--nutrition_gr-dims"></span>
+        </a>
+</span>
+
+<div style="margin-left: 20px;">
+	<div class="ulLi"><div class="ulspan"></div><span class="spanText">хліб</span></div>
+	<div class="ulLi"><div class="ulspan"></div><span class="spanText">копчений лосось</span></div>
+	<div class="ulLi"><div class="ulspan"></div><span class="spanText">сир</span></div>
+	<div class="ulLi"><div class="ulspan"></div><span class="spanText">помідор</span></div>
+	<div class="ulLi"><div class="ulspan"></div><span class="spanText">цибуля</span></div>
+	<div class="ulLi"><div class="ulspan"></div><span class="spanText">оливкова олія</span></div>
+</div>
+
+<div class="uu_mod">
+<h2 class="heading__h2Gutters review">Відгуки</h2>
+<button class="button_wrata togglesM btn btn--intro btn--modal" data-toggle="true"></button>
+</div>
+<div class="starsRating" onclick="AnchorScroll('reviews')" data-ratingstars="5">
+	
+		<h4 class="helpfulHeader">Рейтинг</h4>
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="Rated as 5 out of 5 Stars">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+</div>
+
+	
+		<div class="wrata">
+			<div class="rev_wrata colo1_revie togglesV" data-toggle="true">
+				<div>
+					<img class="rev-picture"
+					 src="../img/icons/avatar-1.jpg"
+					 alt="Grapefruit slice atop a pile of other slices" />
+					 <h2 class="rev-h2">Tim <br>Sofjanov</h2>
+				</div>
+				<div class="opp">
+					<div class="fhf">
+						<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="Rated as 5 out of 5 Stars">
+						<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+						<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+						<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+						<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+						
+							<h4> 29/04/2019</h4>
+					</div>
+							 <p>These were very nice. I was expecting...</p>
+				</div>
+			</div>
+			
+			<div class="rev_wrata colo2_revie togglesV2" data-toggle="true">
+				<div>
+					<img class="rev-picture"
+					 src="../img/icons/avatar-2.jpg"
+					 alt="Grapefruit slice atop a pile of other slices" />
+					 <h2 class="rev-h2">Anna <br>Mitrofanova</h2>
+				</div>
+					<div class="opp">
+						<div class="fhf">
+							<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="Rated as 5 out of 5 Stars">
+							<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+							<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+							<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+							<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+							
+								<h4> 09/04/2019</h4>
+						</div>
+								 <p>This recipe is AWESOME!!! Made these for...</p>
+					</div>
+			</div>
+			
+		</div>
+</section>
+
+	
+		</div>		
+		<!-- // header-title -->
+	</div>
+	<!-- // header-wrapper -->	
+	
+	
+	
+<!--Modal Window-->
+<div class="modal togglesM" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__window">
+    <button class="modal__close togglesM" data-toggle="true">Close</button>
+    <h2 class="modal__title" id="modalTitle">The new review</h2>
+    <p id="modalDescription">This is a modal window for your new review. To make it a little more interesting, I added a funny gif of a tablecloth trick.</p>
+		<form class="cf">
+		  <div class="half left cf">
+			<input type="text" id="input-name" placeholder="Name">
+			<input type="email" id="input-email" placeholder="Email address">
+		  </div>
+		  <div class="half right cf">
+			<textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+		  </div>  
+		  <input type="submit" value="Submit" id="input-submit">
+		</form>
+  </div>
+</div>
+	
+	
+<!--Modal Window-->
+<div class="modalBlock togglesV" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__block">
+    <button class="modal__close togglesV" data-toggle="true">Close</button>
+    
+	<div class="modalC">
+		<div>
+			<img class="rev-picture"
+			src="../img/icons/avatar-1.jpg"
+			alt="Grapefruit slice atop a pile of other slices" />
+			<h2>Tim <br>Sofjanov</h2>
+		</div>
+		
+		<div class="fhf mod_fhf">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="Rated as 5 out of 5 Stars">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				
+				<h4> 29/04/2019</h4>
+		</div>		
+	</div>
+	<div class="paragr mod_par">
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+	</div>
+  </div>
+</div>
+
+
+
+<!--Modal Window-->
+<div class="modalBlock2 togglesV2" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__block2">
+    <button class="modal__close togglesV2" data-toggle="true">Close</button>
+	
+	
+	<div class="modalC">
+		<div>			
+			<img class="rev-picture"
+			 src="../img/icons/avatar-2.jpg"
+			 alt="Grapefruit slice atop a pile of other slices" />
+			<h2>Anna <br>Mitrofanova</h2>
+		</div>
+		
+		<div class="fhf mod_fhf">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="Rated as 5 out of 5 Stars">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				
+				<h4> 09/04/2019</h4>
+		</div>		
+	</div>
+	 
+	<div class="paragr mod_par">
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+	</div>
+  </div>
+</div>
+
+<!--Modal Window-->
+<div class="modalBlock2 togglesV2" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__block2">
+    <button class="modal__close togglesV2" data-toggle="true">Close</button>
+	
+	
+	<div class="modalC">
+		<div>			
+			<img class="rev-picture"
+			 src="../img/icons/avatar-2.jpg"
+			 alt="Grapefruit slice atop a pile of other slices" />
+			<h2>Anna <br>Mitrofanova</h2>
+		</div>
+		
+		<div class="fhf mod_fhf">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="Rated as 5 out of 5 Stars">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				<img height="14" width="14" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+				
+				<h4> 09/04/2019</h4>
+		</div>		
+	</div>
+	 
+	<div class="paragr mod_par">
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+	</div>
+  </div>
+</div>
+
+<!--Semi-transparent Cover-->
+<div id="cover"></div>
+<script src="../js/window2.js"></script>
+	
+		<div class="container-f footer">
+				<div class="row">
+					<div class="container">
+						<div class="row">
+							<div class="colsm_1"><a href="#openModal">©</a> Sugak Gleb | 2018-2019</div>							
+							<div class="colsm_2"><div id="lang_selected"><p>UA</p></div></div>
+							<div class="colsm_3">
+								<ul class="pmn footer-menu">
+									<li><a href="index.html">Головна</a></li>
+									<li><a href="#openModalAbout">Про нас</a></li>
+									<li><a href="news.html">Новини</a></li>
+									<li><a href="recipes.html">Рецепти</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+	<script src="../js/main.js"></script>
+
+</body>
+</html>

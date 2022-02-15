@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Sandwiches</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="../img/logo/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/language.css">
+	<link rel="stylesheet" href="../css/modal.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,
+	900|Playfair+Display:400,400i&amp;subset=cyrillic" rel="stylesheet">
+	<script src="../js/jquery.min.js"></script>
+	
+</head>
+
+<body onclick="body_field_2(event)">
+
+	<!-- space -->
+	<div class="space-1">		
+	</div>
+	<!-- // space -->
+	<!-- nav-wrapper -->
+	<div class="nav_wrapper" data-menu="1">
+	
+		<div class="logo">
+		
+			<a href="index.html">
+				<img src="../img/logo/sandwich.svg" alt="Long Beach Surfing Institute">
+			</a>
+			
+		</div>
+		
+		<div id="lang_selector" class="language-dropdown" data-menu="1">
+			  <label for="toggle" class="lang-flag lang-en" title="Click to select the language" data-menu="1">
+				<span class="flag" data-menu="1"></span>
+			  </label>
+			  <ul class="lang-list" data-menu="1">
+				<li class="lang lang-en selected" title="EN">
+				  <span class="flag"></span>
+				</li>
+				<li class="lang lang-pt" title="UA">
+				  <a href="../UA/recipes.html"><span class="flag"></span></a>
+				</li>
+				<li class="lang lang-es" title="RU">
+				  <a href="../RU/recipes.html"><span class="flag"></span></a>
+				</li>
+			  </ul>
+		</div>
+	
+			<input type="checkbox" id="hmt" class="hidden-menu-ticker" data-menu="1">
+			<label class="btnn-menu" for="hmt" id="open-menu" data-target="#collapse-menu" data-menu="1">
+			  <span class="first" data-menu="1"></span>
+			  <span class="second" data-menu="1"></span>
+			  <span class="third" data-menu="1"></span>
+			</label>
+	
+		<ul class="nav" id="collapse-menu" data-menu="1">
+		
+			<li data-menu="1"><a href="index.html" class="nav_item">Home</a><hr></li>
+			<li data-menu="1"><a href="#openModalAbout" class="nav_item">About</a><hr></li>
+			<li data-menu="1"><a href="news.html" class="nav_item">News</a><hr></li>
+			<li data-menu="1"><a href="recipes.html" class="nav_item last-child nav_item-active"><span class="letter">Recipes</span></a><hr></li>
+		
+		</ul>
+		
+	</div>
+	<!-- // nav-wrapper -->
+	
+	<!-- space -->
+	<div class="space">	
+	<img src="../img/recipes/teaser.jpg" alt="Long Beach Surfing Institute">	
+	</div>
+	<!-- // space -->
+	
+	<!-- header-wrapper -->
+	<div class="header-wrapper">
+	
+		
+		<!-- header-title -->
+		<h1 class="header-title">Eight hot sandwiches</h1>
+		<div class="header-description toun">
+			<p>Hot sandwiches - this is a real find for those who do not have time to prepare a full meal, but I really want to eat. In the review - a few simple and delicious recipes.</p>
+		<div class="rowd">
+		<div id="sndwch-1">
+			<h2>1. Sandwich <br> &nbsp;&nbsp;&nbsp; "Caprese"</h2>			
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/caprese.jpg" />
+					<div class="mask">
+					  <div class="text_mask">
+						  <p>Ingredients: bread, mozzarella, tomatoes, lettuce, basil, olive oil.</p>
+						  <p>Cooking time: 10 min.</p>
+						  <p>Calorie: 111 kcal.</p>
+					  </div>
+					</div>
+				  </div>		
+				</div>
+		</div>
+		<div id="sndwch-1">		
+			<h2>2. Sandwich with <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ham and cheese</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/vetchin.jpg" alt="Long Beach Surfing Institute">	
+					<div class="mask">					
+						<div class="text_mask">
+						  <p>Ingredients: bread, cheese, tomatoes, ham, salt, ground pepper.</p>
+						  <p>Cooking time: 10 min.</p>
+						  <p>Calorie: 144 kcal.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		
+		<div id="sndwch-1">		
+			<h2>3. Chicken Sandwich <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with Bacon and Avocado</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/avocado.jpg" alt="Long Beach Surfing Institute">
+				    <div class="mask">					
+						<div class="text_mask">
+						  <p>Ingredients: bread, avocado, chicken, bacon, lettuce, tomato, lemon juice.</p>
+						  <p>Cooking time: 30 min.</p>
+						  <p>Calorie: 186 kcal.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		</div>
+		<div class="rowd">
+		<div id="sndwch-1">		
+			<h2>4. Egg and Spinach <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sandwich</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/shpinat.jpg" alt="Long Beach Surfing Institute">	
+					<div class="mask">
+						<div class="text_mask">
+						  <p>Ingredients: bread, spinach, scallions, eggs, olive oil.</p>
+						  <p>Cooking time: 20 min.</p>
+						  <p>Calorie: 136 kcal.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		<div id="sndwch-1">		
+			<h2>5. Mexican <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;burger</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/burger.jpg" alt="Long Beach Surfing Institute">	
+					<div class="mask">
+						<div class="text_mask">
+						  <p>Ingredients: bun, mayonnaise, ground beef, paprika, green onion, tomato, lettuce, garlic, salsa sauce.</p>
+						  <p>Cooking time: 20 min.</p>
+						  <p>Calorie: 136 kcal.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		<div id="sndwch-1">		
+			<h2>6. Club <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sandwich</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/american.jpg" alt="Long Beach Surfing Institute">	
+					<div class="mask">
+						<div class="text_mask">
+						  <p>Ingredients: bread, mayonnaise, cheese, bacon, chicken, tomato, onion, lettuce.</p>
+						  <p>Cooking time: 25 min.</p>
+						  <p>Calorie: 156 kcal.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		</div>
+		<div class="rowd">
+		<div id="sndwch-1">		
+			<h2>7. Fast <br>Chicken Pie</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/chicken.jpg" alt="Long Beach Surfing Institute">	
+					<div class="mask">
+					    <div class="text_mask">
+						  <p>Ingredients: flour, chicken, mayonnaise, sour cream, eggs, onion, lemon juice.</p>
+						  <p>Cooking time: 1 hour 10 minutes.</p>
+						  <p>Calorie: 163 kcal.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		<div id="sndwch-1">		
+			<h2>8. Sandwich with cheese, <br>tomatoes and smoked salmon</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/losos.jpg" alt="Long Beach Surfing Institute">	
+					<div class="mask">
+						<div class="text_mask">
+						  <p>Ingredients: bread, smoked salmon, tomato, cheese, onion, olive oil.</p>
+						  <p>Cooking time: 15 min.</p>
+						  <p>Calorie: 136 kcal.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		</div>
+		</div>
+		<!-- // header-title -->
+		
+	</div>
+	<!-- // header-wrapper -->
+	
+		<div class="container-f footer">
+				<div class="row">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm=6"><a href="#openModal">©</a> Sugak Gleb | 2018 -2019</div>							
+							<div class="col-sm=6"><div id="lang_selected"><p>EN</p></div></div>
+							<div class="col-sm=6">
+								<ul class="pmn footer-menu">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#openModalAbout">About</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="recipes.html">Recipes</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+					
+	<script src="../js/main.js"></script>
+	
+	
+	<script type="text/javascript">
+	/*Anchor info*/
+	
+		var i=0;
+			console.log("Termometr");
+		function LaunchMask() {
+		var ParentVew = document.getElementsByClassName('view')[i];
+		var ParentMas = document.getElementsByClassName('mask')[i];
+		var ElId = 'info'+i;
+		var a_hrefs = ["caprese.html",
+						"vetchin.html", "avocado.html",
+						"shpinat.html", "burger.html",
+						"american.html", "chicken.html",
+						"losos.html"];
+		var irs = a_hrefs[i];
+		ParentVew.onmouseover = function(e) {
+		
+			var element=document.getElementById(ElId);
+				if(!element) {
+				
+					var anchor = document.createElement('a');
+					anchor.className = "info";
+					anchor.innerHTML = "Read more";
+					console.log(i);
+					anchor.href = irs;
+					anchor.id = ElId;
+					ParentMas.appendChild(anchor);
+				}
+		}
+		}
+		LaunchMask();
+		i++;
+		LaunchMask();
+		i++;
+		LaunchMask();
+		i++;
+		LaunchMask();
+		i++;
+		LaunchMask();
+		i++;
+		LaunchMask();
+		i++;
+		LaunchMask();
+		i++;
+		LaunchMask();
+  </script>	
+	
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

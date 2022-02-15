@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Бутерброды</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="../img/logo/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/language.css">
+	<link rel="stylesheet" href="../css/modal.css">	
+	<link rel="stylesheet" href="../css/news.css">	
+	<link rel="stylesheet" href="../css/news2.css">
+	<script src="../js/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,
+	900|Playfair+Display:400,400i&amp;subset=cyrillic" rel="stylesheet">
+	
+	
+</head>
+
+<body onclick="body_field_2(event)">
+
+	<!-- space -->
+	<div class="space-1">		
+	</div>
+	<!-- // space -->
+	<!-- nav-wrapper -->
+	<div class="nav_wrapper" data-menu="1">
+	
+		<div class="logo">
+		
+			<a href="index.html">
+				<img src="../img/logo/sandwich.svg" alt="Long Beach Surfing Institute">
+			</a>
+			
+		</div>
+		
+		<div id="lang_selector" class="language-dropdown" data-menu="1">
+			  <label for="toggle" class="lang-flag lang-es" title="Click to select the language" data-menu="1">
+				<span class="flag" data-menu="1"></span>
+			  </label>
+			  <ul class="lang-list" data-menu="1">
+				<li class="lang lang-en" title="EN" data-menu="1">
+				  <a href="../EN/news.html"><span class="flag"></span></a>
+				</li>
+				<li class="lang lang-pt" title="UA" data-menu="1">
+				  <a href="../UA/news.html"><span class="flag"></span></a>
+				</li>
+				<li class="lang lang-es selected" title="RU" data-menu="1">
+				  <a href="../RU/news.html"><span class="flag"></span></a>
+				</li>
+			  </ul>
+		</div>
+	
+			<input type="checkbox" id="hmt" class="hidden-menu-ticker" data-menu="1">
+			<label class="btnn-menu" for="hmt" id="open-menu" data-target="#collapse-menu" data-menu="1">
+			  <span class="first" data-menu="1"></span>
+			  <span class="second" data-menu="1"></span>
+			  <span class="third" data-menu="1"></span>
+			</label>
+	
+		<ul class="nav" id="collapse-menu" data-menu="1">
+		
+			<li data-menu="1"><a href="index.html" class="nav_item">Главная</a><hr></li>
+			<li data-menu="1"><a href="#openModalAbout" class="nav_item">О нас</a><hr></li>
+			<li data-menu="1"><a href="news.html" class="nav_item nav_item-active">Новости</a><hr></li>
+			<li data-menu="1"><a href="recipes.html" class="nav_item last-child"><span class="letter">Рецепты</span></a><hr></li>
+		
+		</ul>
+		
+	</div>
+	<!-- // nav-wrapper -->
+	
+	<!-- space -->
+	<div class="space">	
+	</div>
+	<!-- // space -->
+	
+	<!-- header-wrapper -->
+	<div class="header-wrapper">
+	
+		<!-- header-title -->
+		<h1 class="header-title">Новости</h1>
+		<div class="header-description space-desc2">
+			<p style="text-align: center">Последние новости и анализ про бутерброды. <br>Мировые тенденции, фото, видео, технические обзоры, новости технологий, науки и развлечений.
+			</p>
+			
+		</div>		
+		<!-- // header-title -->
+		
+		<div class="wrata">
+			<div class="rev_wrata colo1_revie togglesV" data-toggle="true">
+				<div>
+					<img class="rev-picture"
+					 src="../img/news/news1.jpg"
+					 alt="Grapefruit slice atop a pile of other slices" />
+				</div>
+				<div>
+					 <p>03/05/2019</p><br>
+					 <p>Мистер Коэн грустит из-за того, что никто не готовит бутерброды...</p>
+				</div>
+			</div>
+			
+			<div class="rev_wrata colo2_revie togglesV2" data-toggle="true">
+				<div>
+					<img class="rev-picture"
+					 src="../img/news/news2.jpg"
+					 alt="Grapefruit slice atop a pile of other slices" />
+				</div>
+				<div>
+					 <p>02/05/2019</p><br>
+					 <p>Одну девочку осчастливил обычный бутерброд.</p>
+				</div>
+			</div>
+			
+			<div class="rev_wrata colo3_revie togglesV3" data-toggle="true">
+				<div>
+					<img class="rev-picture"
+					 src="../img/news/news3.jpg"
+					 alt="Grapefruit slice atop a pile of other slices" />
+				</div>
+				<div>
+					 <p>01/05/2019</p><br>
+					 <p>Без бутербродов люди сходят с ума.</p>
+				</div>
+			</div>
+			
+			<div class="rev_wrata colo4_revie togglesV4" data-toggle="true">
+				<div>
+					<img class="rev-picture"
+					 src="../img/news/news4.jpg"
+					 alt="Grapefruit slice atop a pile of other slices" />
+				</div>
+				<div>
+					 <p>30/04/2019</p><br>
+					 <p>Бутерброды вдохновляют.</p>
+				</div>
+			</div>
+			
+			<div class="rev_wrata colo5_revie togglesV5" data-toggle="true">
+				<div>
+					<img class="rev-picture" src="../img/news/news5.jpg" alt="Grapefruit slice atop a pile of other slices">
+				</div>
+				<div>
+					 <p>29/04/2019</p><br>
+					 <p>Умная кухня: новая техника, оснащенная адаптивными технологиями</p>
+				</div>
+			</div>
+			
+			<div class="rev_wrata colo6_revie togglesV6" data-toggle="true">
+				<div>
+					<img class="rev-picture"
+					 src="../img/news/news6.jpg"
+					 alt="Grapefruit slice atop a pile of other slices">
+				</div>				
+				<div>
+					 <p>28/04/2019</p>
+					 <p>Недавно где-то прошёл фестваль еды )</p>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+	<!-- // header-wrapper -->
+	
+	
+	
+<!--Modal Window-->
+<div class="modal togglesM" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__window">
+    <button class="modal__close togglesM" data-toggle="true">Close</button>
+    <h2 class="modal__title" id="modalTitle">The new review</h2>
+    <p id="modalDescription">This is a modal window for your new review. To make it a little more interesting, I added a funny gif of a tablecloth trick.</p>
+		<form class="cf">
+		  <div class="half left cf">
+			<input type="text" id="input-name" placeholder="Name">
+			<input type="email" id="input-email" placeholder="Email address">
+		  </div>
+		  <div class="half right cf">
+			<textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+		  </div>  
+		  <input type="submit" value="Submit" id="input-submit">
+		</form>
+  </div>
+</div>
+
+
+<!--Modal Window-->
+<div class="modalBlock togglesV" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__block">
+    <button class="modal__close togglesV" data-toggle="true">Close</button>
+	<span class="newTime">03/05/2019</span>
+    <img class="newPicture"
+	src="../img/news/news1.jpg"
+	alt="Grapefruit slice atop a pile of other slices" />
+	<h2>Мистер Коэн грустит из-за того, что никто не готовит бутерброды...</h2>
+	<div>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+	</div>
+  </div>
+</div>
+
+
+
+<!--Modal Window-->
+<div class="modalBlock2 togglesV2" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__block2">
+    <button class="modal__close togglesV2" data-toggle="true">Close</button>
+    <span class="newTime">02/05/2019</span>
+    <img class="newPicture"
+	 src="https://s.hdnux.com/photos/22/41/31/4855404/3/1024x1024.jpg"
+	 alt="Grapefruit slice atop a pile of other slices" />
+	 <h2>Одну девочку осчастливил обычный бутерброд.</h2>
+	<div>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+	</div>
+  </div>
+</div>
+
+
+<!--Modal Window-->
+<div class="modalBlock3 togglesV3" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__block3">
+    <button class="modal__close togglesV3" data-toggle="true">Close</button>
+    <span class="newTime">01/05/2019</span>
+    <img class="newPicture"
+	 src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Ftimedotcom.files.wordpress.com%2F2019%2F04%2Fpoland-banana-pictures.jpg"
+	 alt="Grapefruit slice atop a pile of other slices" />
+	 <h2>Без бутербродов люди сходят с ума.</h2>
+	<div>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+	</div>
+  </div>
+</div>
+
+<!--Modal Window-->
+<div class="modalBlock4 togglesV4" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__block4">
+    <button class="modal__close togglesV4" data-toggle="true">Close</button>
+	<span class="newTime">30/04/2019</span>
+    <img class="newPicture"
+	 src="../img/news/news4.jpg"
+	 alt="Grapefruit slice atop a pile of other slices" />
+	 <h2>Бутерброды вдохновляют.</h2>
+	<div>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+	</div>
+  </div>
+</div>
+
+
+<!--Modal Window-->
+<div class="modalBlock5 togglesV5" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__block5">
+    <button class="modal__close togglesV5" data-toggle="true">Close</button>
+    <span class="newTime">29/04/2019</span>
+    <img class="newPicture"
+	 src="../img/news/news5.jpg"
+	 alt="Grapefruit slice atop a pile of other slices" />
+	 <h2>Умная кухня: новая техника, оснащенная адаптивными технологиями</h2>
+	<div>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+	</div>
+  </div>
+</div>
+
+<!--Modal Window-->
+<div class="modalBlock6 togglesV6" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__block6">
+    <button class="modal__close togglesV6" data-toggle="true">Close</button>
+    <span class="newTime">28/04/2019</span>
+    <img class="newPicture"
+	 src="../img/news/news6.jpg"
+	 alt="Grapefruit slice atop a pile of other slices" />
+	 <h2>Недавно где-то прошёл фестваль еды )</h2>
+	<div>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+		<p>jhvfhjvjhcvvvvvvvvvvvvvcccxxxxxxxxxxxssssssss</p>
+	</div>
+  </div>
+</div>
+
+<!--Semi-transparent Cover-->
+<div id="cover"></div>
+<script src="../js/window.js"></script>
+	
+	
+	
+			<!-- The Modal -->			
+				<div id="openModal" class="modalbg">
+				  <div class="dialog">
+					<a href="#close" title="Close" class="close">&#5741</a>
+					<h2>ВСЕ ПРАВА ЗАЩИЩЕНЫ</h2>
+					<h3>На самом деле нет.</h3>
+				  <p>Большая часть текста, изображений была взята из посторонних источников.</p>
+				  <p>Авторские права на все материалы, размещенные на этом сайте незащищены в соответствии с действующим законодательством Украины «Об авторском праве и смежных правах».</p>
+				  <p>При копировании материала с этого сайта, вы вряд ли повлечёте ответственность, предусмотренную законодательством Украины о защите авторских прав.</p> 
+				  <p>Но нам всё равно будет приятно, если пользуясь материалами из нашего сайта, вы укажете ссылку на этот сайт.</p>
+				</div>
+				</div>
+			<!--// The Modal -->
+			
+			<!-- The Modal -->			
+				<div id="openModalAbout" class="modalbg">
+				  <div class="dialog">
+					<a href="#close" title="Close" class="close">&#5741</a>
+					<h2>О сайте</h2>
+				  <p>Этот сайт разработан в учебных целях.</p>
+				  <p>Все материалы были повзаимствованы с ресурса - kitchenmag.ru/</p>
+				  <p>Но дизайн был выбран разработчиками этого сайта.</p> 
+				  <p>Поэтому наш сайт не просто копирует чужие рецепты, а демонстрирует, пусть и не свои, рецепты в новом свете.</p>
+				</div>
+				</div>
+			<!--// The Modal -->
+	
+		<div class="container-f footer">
+				<div class="row">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm=6"><a href="#openModal">©</a> Sugak Gleb | 2018 -2019</div>							
+							<div class="col-sm=6"><div id="lang_selected"><p>RU</p></div></div>
+							<div class="col-sm=6">
+								<ul class="pmn footer-menu">
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="#openModalAbout">О сайте</a></li>
+									<li><a href="news.html">Новости</a></li>
+									<li><a href="recipes.html">Рецепты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+					
+	<script src="../js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

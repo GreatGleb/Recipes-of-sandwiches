@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+
+<html lang="ua">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Бутерброди</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="../img/logo/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/language.css">
+	<link rel="stylesheet" href="../css/modal.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,
+	900|Playfair+Display:400,400i&amp;subset=cyrillic" rel="stylesheet">
+	<script src="../js/jquery.min.js"></script>
+	
+</head>
+
+<body onclick="body_field_2(event)">
+
+	<!-- space -->
+	<div class="space-1">		
+	</div>
+	<!-- // space -->
+	<!-- nav-wrapper -->
+	<div class="nav_wrapper" data-menu="1">
+	
+		<div class="logo">
+		
+			<a href="index.html">
+				<img src="../img/logo/sandwich.svg" alt="Long Beach Surfing Institute">
+			</a>
+			
+		</div>
+		
+		<div id="lang_selector" class="language-dropdown" data-menu="1">
+			  <label for="toggle" class="lang-flag lang-pt" title="Click to select the language" data-menu="1">
+				<span class="flag" data-menu="1"></span>
+			  </label>
+			  <ul class="lang-list" data-menu="1">
+				<li class="lang lang-en" title="EN" data-menu="1">
+				  <a href="../EN/recipes.html"><span class="flag"></span></a>
+				</li>
+				<li class="lang lang-pt selected" title="UA" data-menu="1">
+				  <span class="flag"></span>
+				</li>
+				<li class="lang lang-es" title="RU" data-menu="1">
+				  <a href="../RU/recipes.html"><span class="flag"></span></a>
+				</li>
+			  </ul>
+		</div>
+	
+			<input type="checkbox" id="hmt" class="hidden-menu-ticker" data-menu="1">
+			<label class="btnn-menu" for="hmt" id="open-menu" data-target="#collapse-menu" data-menu="1">
+			  <span class="first" data-menu="1"></span>
+			  <span class="second" data-menu="1"></span>
+			  <span class="third" data-menu="1"></span>
+			</label>
+	
+		<ul class="nav" id="collapse-menu" data-menu="1">
+		
+			<li data-menu="1"><a href="index.html" class="nav_item">Головна</a><hr></li>
+			<li data-menu="1"><a href="#openModalAbout" class="nav_item">Про нас</a><hr></li>
+			<li data-menu="1"><a href="news.html" class="nav_item">Новини</a><hr></li>
+			<li data-menu="1"><a href="recipes.html" class="nav_item last-child nav_item-active"><span class="letter">Рецепти</span></a><hr></li>
+		
+		</ul>
+		
+	</div>
+	<!-- // nav-wrapper -->
+	
+	<!-- space -->
+	<div class="space">	
+	<img src="../img/recipes/teaser.jpg" alt="Long Beach Surfing Institute">	
+	</div>
+	<!-- // space -->
+	
+	<!-- header-wrapper -->
+	<div class="header-wrapper">
+	
+		<!-- header-title -->
+		<h1 class="header-title">Вісім гарячих сендвічів</h1>
+		<div class="header-description toun">
+			<p>Гарячі бутерброди - це справжня знахідка для тих, у кого часу на приготування повноцінного обіду немає, а перекусити ну дуже хочеться. В огляді - кілька простих і смачних рецептів.</p>
+		<div class="rowd">
+		<div id="sndwch-1">
+			<h2>1. Сендвіч <br> &nbsp;&nbsp;&nbsp; "Капрезе"</h2>			
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/caprese.jpg" />
+					<div class="mask">
+					  <div class="text_mask">
+						  <p>Склад: хліб, моцарелла, помідори, листя салату, базилік, оливкова олія.</p>
+						  <p>Час приготування: 10 хв.</p>
+						  <p>Калорійність: 111 кКал.</p>
+					  </div>
+					</div>
+				  </div>		
+				</div>
+		</div>
+		<div id="sndwch-1">		
+			<h2>2. Сендвіч з шинкою <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;і сиром</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/vetchin.jpg" alt="Long Beach Surfing Institute">	
+					<div class="mask">					
+						<div class="text_mask">
+						  <p>Склад: хліб, сир, помідори, шинка, сіль, мелений перець.</p>
+						  <p>Час приготування: 10 хв.</p>
+						  <p>Калорійність: 144 кКал.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		
+		<div id="sndwch-1">		
+			<h2>3. Сендвіч з куркою, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;беконом і авокадо</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/avocado.jpg" alt="Long Beach Surfing Institute">
+				    <div class="mask">					
+						<div class="text_mask">
+						  <p>Склад: хліб, авокадо, курка, бекон, листя салату, помідор, лимонний сік.</p>
+						  <p>Час приготування: 30 хв.</p>
+						  <p>Калорійність: 186 кКал.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		</div>
+		<div class="rowd">
+		<div id="sndwch-1">		
+			<h2>4. Сендвіч з яйцем <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;і шпинатом</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/shpinat.jpg" alt="Long Beach Surfing Institute">	
+					<div class="mask">
+						<div class="text_mask">
+						  <p>Склад: хліб, шпинат, зелений лук, яйця, оливкова олія.</p>
+						  <p>Час приготування: 20 хв.</p>
+						  <p>Калорійність: 136 кКал.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		<div id="sndwch-1">		
+			<h2>5. Бургер <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;по-мексиканськи</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/burger.jpg" alt="Long Beach Surfing Institute">	
+					<div class="mask">
+						<div class="text_mask">
+						  <p>Склад: булка, майонез, яловичий фарш, болгарський перець, зелений лук, помідор, листя салату, часник, соус сальса.</p>
+						  <p>Час приготування: 20 хв.</p>
+						  <p>Калорійність: 136 кКал.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		<div id="sndwch-1">		
+			<h2>6. Клубний <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;сендвіч</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/american.jpg" alt="Long Beach Surfing Institute">	
+					<div class="mask">
+						<div class="text_mask">
+						  <p>Склад: хліб, майонез, сир, бекон, курка, помідор, цибуля, листя салату.</p>
+						  <p>Час приготування: 25 хв.</p>
+						  <p>Калорійність: 156 кКал.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		</div>
+		<div class="rowd">
+		<div id="sndwch-1">		
+			<h2>7. Швидкий <br>курячий пиріг</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/chicken.jpg" alt="Long Beach Surfing Institute">	
+					<div class="mask">
+					    <div class="text_mask">
+						  <p>Склад: борошно, курка, майонез, сметана, яйця, цибуля, лимонний сік.</p>
+						  <p>Час приготування: 1 година 10 хв.</p>
+						  <p>Калорійність: 163 кКал.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		<div id="sndwch-1">		
+			<h2>8. Бутерброд з сиром, <br> помідорами і копченим лососем</h2>
+				<div id="all">
+				  <div class="view view-first">
+					<img src="../img/recipes/losos.jpg" alt="Long Beach Surfing Institute">	
+					<div class="mask">
+						<div class="text_mask">
+						  <p>Склад: хліб, копчений лосось, помідор, сир, цибуля, оливкова олія.</p>
+						  <p>Час приготування: 15 хв.</p>
+						  <p>Калорійність: 136 кКал.</p>
+					    </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		</div>
+		</div>
+		<!-- // header-title -->
+		
+	</div>
+	<!-- // header-wrapper -->	
+
+		<div class="container-f footer">
+				<div class="row">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm=6"><a href="#openModal">©</a> Sugak Gleb | 2018 -2019</div>							
+							<div class="col-sm=6"><div id="lang_selected"><p>UA</p></div></div>
+							<div class="col-sm=6">
+								<ul class="pmn footer-menu">
+									<li><a href="index.html">Головна</a></li>
+									<li><a href="#openModalAbout">Про нас</a></li>
+									<li><a href="news.html">Новини</a></li>
+									<li><a href="recipes.html">Рецепти</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+						
+	<script type="text/javascript">
+	/*Anchor info*/
+	
+		var i=0;
+			console.log("Termometr");
+		function LaunchMask() {
+		var ParentVew = document.getElementsByClassName('view')[i];
+		var ParentMas = document.getElementsByClassName('mask')[i];
+		var ElId = 'info'+i;
+		var a_hrefs = ["caprese.html",
+						"vetchin.html", "avocado.html",
+						"shpinat.html", "burger.html",
+						"american.html", "chicken.html",
+						"losos.html"];
+		var irs = a_hrefs[i];
+		ParentVew.onmouseover = function(e) {
+		
+			var element=document.getElementById(ElId);
+				if(!element) {
+				
+					var anchor = document.createElement('a');
+					anchor.className = "info";
+					anchor.innerHTML = "Детальніше";
+					console.log(i);
+					anchor.href = irs;
+					anchor.id = ElId;
+					ParentMas.appendChild(anchor);
+				}
+		}
+		}
+		LaunchMask();
+		i++;
+		LaunchMask();
+		i++;
+		LaunchMask();
+		i++;
+		LaunchMask();
+		i++;
+		LaunchMask();
+		i++;
+		LaunchMask();
+		i++;
+		LaunchMask();
+		i++;
+		LaunchMask();
+
+  </script>	
+  
+	<script src="../js/main.js"></script>	
+	
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
