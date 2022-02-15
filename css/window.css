@@ -1,0 +1,576 @@
+.modal h1 {	
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 1rem 0;
+  text-shadow: 1px 1px 0 white;
+  text-align: center;
+}
+
+.modal .intro {
+  margin: auto;
+  max-width: 450px;
+}
+
+.modal p {
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.modal button {
+  cursor: pointer;
+  outline: 0;
+}
+
+.modal .btn {
+  background-color: #fff;
+  border: 0;
+  border-radius: 3px;
+  color: #2893ce;
+  display: inline-block;
+  font: inherit;
+  opacity: 1;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  transition: opacity .2s ease-out;
+}
+.modal .btn:hover {
+  opacity: .8;
+}
+
+.modal .btn--intro {
+  margin-top: 1rem;
+}
+
+.modal .btn--modal {
+  background-color: #2893ce;
+  color: #fff;
+  width: 100%;
+}
+
+.modal .cover {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.modal {
+  bottom: 0;
+  color: #3b3b3b;
+  display: flex;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  padding: 40px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.9) translate3d(0, -50px, 0);
+          transform: scale(0.9) translate3d(0, -50px, 0);
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, transform 0.2s ease-out;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  visibility: hidden;
+  z-index: 152;
+  overflow: hidden;
+}
+
+.modal[data-state='open'] {
+  opacity: 1;
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  transition-delay: 0s;
+  visibility: visible;
+}
+.modal[data-state='open'] ~ .cover {
+  opacity: 1;
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+.modal__window {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  overflow: auto;
+  padding: 1rem;
+  position: relative;
+  width: 450px;
+}
+
+.modal__close {
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC40MTQgN2w0Ljk1LTQuOTVMMTEuOTQ4LjYzOCA3IDUuNTg3IDIuMDUuNjM2LjYzOCAyLjA1IDUuNTg3IDdsLTQuOTUgNC45NSAxLjQxNCAxLjQxM0w3IDguNDEzbDQuOTUgNC45NSAxLjQxMy0xLjQxNEw4LjQxMyA3eiIgZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+) no-repeat center center;
+  border: 0;
+  height: 20px;
+  line-height: 20px;
+  opacity: .3;
+  position: absolute;
+  right: 1rem;
+  text-indent: -9999px;
+  transition: all .2s ease-out;
+  width: 1rem;
+}
+.modal__close:hover {
+  opacity: .6;
+}
+
+.modal__title {
+  font-size: 1.5rem;
+  margin: .5rem 0;
+}
+
+.modal__image {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 100%;
+  }
+
+  body {
+    padding: 20px;
+  }
+
+  .modal {
+    padding: 20px;
+  }
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+.modal *,
+.modal *:before,
+.modal *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+form input, form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+form input:focus, form textarea:focus {
+  -moz-box-shadow: 0 0px 2px #e74c3c !important;
+  -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+  box-shadow: 0 0px 2px #e74c3c !important;
+}
+form #input-submit {
+  color: white;
+  background: #e74c3c;
+  cursor: pointer;
+}
+form #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+form textarea {
+  height: 126px;
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+
+/***Block*******************************************/
+.modalBlock h1 {	
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 1rem 0;
+  text-shadow: 1px 1px 0 white;
+  text-align: center;
+}
+
+.modalBlock .intro {
+  margin: auto;
+  max-width: 450px;
+}
+
+.modalBlock p {
+  text-align: center;
+}
+
+.modalBlock button {
+  cursor: pointer;
+  outline: 0;
+}
+
+.modalBlock .btn {
+  background-color: #fff;
+  border: 0;
+  border-radius: 3px;
+  color: #2893ce;
+  display: inline-block;
+  font: inherit;
+  opacity: 1;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  transition: opacity .2s ease-out;
+}
+.modalBlock .btn:hover {
+  opacity: .8;
+}
+
+.modalBlock .btn--intro {
+  margin-top: 1rem;
+}
+
+.modalBlock .btn--modal {
+  background-color: #2893ce;
+  color: #fff;
+  width: 100%;
+}
+
+.modalBlock .cover {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.modalBlock {
+  bottom: 0;
+  color: #3b3b3b;
+  display: flex;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  padding: 40px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.9) translate3d(0, -50px, 0);
+          transform: scale(0.9) translate3d(0, -50px, 0);
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, transform 0.2s ease-out;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  visibility: hidden;
+  z-index: 152;
+  overflow: hidden;
+}
+
+.modalBlock[data-state='open'] {
+  opacity: 1;
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  transition-delay: 0s;
+  visibility: visible;
+}
+.modalBlock[data-state='open'] ~ .cover {
+  opacity: 1;
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+.modal__block {
+  background-color: #fff792;
+  border-radius: 3px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  overflow: auto;
+  padding: 1rem;
+  position: relative;
+  width: 450px;
+}
+
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 100%;
+  }
+
+  body {
+    padding: 20px;
+  }
+
+  .modal__block {
+    padding: 20px;
+  }
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+.modalBlock *,
+.modalBlock *:before,
+.modalBlock *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.paragr {
+	margin-top: -110px;
+	margin-left: 85px;
+}
+
+
+/***BlockS*******************************************/
+.modalBlock2 h1,
+.modalBlock3 h1,
+.modalBlock4 h1,
+.modalBlock5 h1,
+.modalBlock6 h1 {	
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 1rem 0;
+  text-shadow: 1px 1px 0 white;
+  text-align: center;
+}
+
+.modalBlock2 .intro,
+.modalBlock3 .intro,
+.modalBlock4 .intro,
+.modalBlock5 .intro,
+.modalBlock6 .intro {
+  margin: auto;
+  max-width: 450px;
+}
+
+.modalBlock2 p,
+.modalBlock3 p,
+.modalBlock4 p,
+.modalBlock5 p,
+.modalBlock6 p {
+  text-align: center;
+}
+
+.modalBlock2 button,
+.modalBlock3 button,
+.modalBlock4 button,
+.modalBlock5 button,
+.modalBlock6 button {
+  cursor: pointer;
+  outline: 0;
+}
+
+.modalBlock2 .btn,
+.modalBlock3 .btn,
+.modalBlock4 .btn,
+.modalBlock5 .btn,
+.modalBlock6 .btn {
+  background-color: #fff;
+  border: 0;
+  border-radius: 3px;
+  color: #2893ce;
+  display: inline-block;
+  font: inherit;
+  opacity: 1;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  transition: opacity .2s ease-out;
+}
+.modalBlock2 .btn:hover,
+.modalBlock3 .btn:hover,
+.modalBlock4 .btn:hover,
+.modalBlock5 .btn:hover,
+.modalBlock6 .btn:hover {
+  opacity: .8;
+}
+
+.modalBlock2 .btn--intro,
+.modalBlock3 .btn--intro,
+.modalBlock4 .btn--intro,
+.modalBlock5 .btn--intro,
+.modalBlock6 .btn--intro {
+  margin-top: 1rem;
+}
+
+.modalBlock2 .btn--modal,
+.modalBlock3 .btn--modal,
+.modalBlock4 .btn--modal,
+.modalBlock5 .btn--modal,
+.modalBlock6 .btn--modal {
+  background-color: #2893ce;
+  color: #fff;
+  width: 100%;
+}
+
+.modalBlock2 .cover,
+.modalBlock3 .cover,
+.modalBlock4 .cover,
+.modalBlock5 .cover,
+.modalBlock6 .cover {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.modalBlock2,
+.modalBlock3,
+.modalBlock4,
+.modalBlock5,
+.modalBlock6 {
+  bottom: 0;
+  color: #3b3b3b;
+  display: flex;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  padding: 40px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.9) translate3d(0, -50px, 0);
+          transform: scale(0.9) translate3d(0, -50px, 0);
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, transform 0.2s ease-out;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  visibility: hidden;
+  z-index: 152;
+  overflow: hidden;
+}
+
+.modalBlock2[data-state='open'],
+.modalBlock3[data-state='open'],
+.modalBlock4[data-state='open'],
+.modalBlock5[data-state='open'],
+.modalBlock6[data-state='open'] {
+  opacity: 1;
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  transition-delay: 0s;
+  visibility: visible;
+}
+.modalBlock2[data-state='open'] ~ .cover,
+.modalBlock3[data-state='open'] ~ .cover,
+.modalBlock4[data-state='open'] ~ .cover,
+.modalBlock5[data-state='open'] ~ .cover,
+.modalBlock6[data-state='open'] ~ .cover {
+  opacity: 1;
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+.modal__block2,
+.modal__block3,
+.modal__block4,
+.modal__block5,
+.modal__block6 {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  overflow: auto;
+  padding: 1rem;
+  position: relative;
+  width: 450px;
+}
+
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 100%;
+  }
+
+  body {
+    padding: 20px;
+  }
+
+  .modal__block2 {
+    padding: 20px;
+  }
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+.modalBlock2 *,
+.modalBlock2 *:before,
+.modalBlock2 *:after,
+
+.modalBlock3 *,
+.modalBlock3 *:before,
+.modalBlock3 *:after,
+
+.modalBlock4 *,
+.modalBlock4 *:before,
+.modalBlock4 *:after,
+
+.modalBlock5 *,
+.modalBlock5 *:before,
+.modalBlock5 *:after,
+
+.modalBlock6 *,
+.modalBlock6 *:before,
+.modalBlock6 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
